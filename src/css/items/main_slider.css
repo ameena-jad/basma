@@ -1,0 +1,120 @@
+.main-slider {
+    min-height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 200px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-slider::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(270deg, #753bbd00 42%, #753bbde3 68%); */
+    background: var(--primary-color);
+    z-index: -1;
+}
+
+.main-slider--content {
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 550px;
+}
+
+.content-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content-item .title {
+    font-size: 17px;
+    color: white;
+}
+
+.content-item .number {
+    font-size: 17.5px;
+    color: white;
+    border-radius: 10px 0 10px 10px;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+/* .main-slider--subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 7px;
+    margin: 0 0 30px;
+} */
+/* 
+.main-slider--subtitle::before {
+    content: '\e908';
+    font-family: 'icomoon' !important;
+    font-size: 18px;
+    font-weight: normal;
+} */
+
+.main-slider--title {
+    font-size: 67px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+.main-slider--desc {
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 400;
+    margin: 20px 0 0;
+}
+
+.main-slider--btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1199.98px) {
+    .main-slider--title{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .main-slider--title{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .main-slider--title{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .main-slider--title{
+        font-size: 35px;
+    }
+}

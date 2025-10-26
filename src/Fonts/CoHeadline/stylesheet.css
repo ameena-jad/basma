@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'CoHeadlineW23';
+    src: url('CoHeadlineW23-ArabicRegular.eot');
+    src: url('CoHeadlineW23-ArabicRegular.eot?#iefix') format('embedded-opentype'),
+        url('CoHeadlineW23-ArabicRegular.woff2') format('woff2'),
+        url('CoHeadlineW23-ArabicRegular.woff') format('woff'),
+        url('CoHeadlineW23-ArabicRegular.ttf') format('truetype'),
+        url('CoHeadlineW23-ArabicRegular.svg#CoHeadlineW23-ArabicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CoHeadlineW23';
+    src: url('CoHeadlineW23-ArabicBold.eot');
+    src: url('CoHeadlineW23-ArabicBold.eot?#iefix') format('embedded-opentype'),
+        url('CoHeadlineW23-ArabicBold.woff2') format('woff2'),
+        url('CoHeadlineW23-ArabicBold.woff') format('woff'),
+        url('CoHeadlineW23-ArabicBold.ttf') format('truetype'),
+        url('CoHeadlineW23-ArabicBold.svg#CoHeadlineW23-ArabicBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'CoHeadlineW23';
+    src: url('CoHeadlineW23-ArabicLight.eot');
+    src: url('CoHeadlineW23-ArabicLight.eot?#iefix') format('embedded-opentype'),
+        url('CoHeadlineW23-ArabicLight.woff2') format('woff2'),
+        url('CoHeadlineW23-ArabicLight.woff') format('woff'),
+        url('CoHeadlineW23-ArabicLight.ttf') format('truetype'),
+        url('CoHeadlineW23-ArabicLight.svg#CoHeadlineW23-ArabicLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

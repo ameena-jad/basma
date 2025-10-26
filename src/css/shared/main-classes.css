@@ -1,0 +1,139 @@
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-fill {
+    flex: 1;
+}
+
+.flex-none {
+    flex: none;
+}
+
+.max-width-90 {
+    max-width: 90%;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.gap {
+    gap: calc(var(--gutter-x) * 2);
+}
+
+.gap-half {
+    gap: var(--gutter-x);
+}
+
+.list-plain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.d-block {
+    display: block !important;
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.glow-effect {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.glow-effect::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, .2);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 1;
+}
+
+@media (min-width: 992px) {
+    .glow-effect:hover::after {
+        height: 250%;
+        transition: all 600ms linear !important;
+        background-color: transparent;
+    }
+}
+
+.alert {
+    font-size: 16px;
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    line-height: 25px;
+    border-radius: 0 0 var(--border-radius-med) 0;
+    margin: 10px 0;
+}
+
+.alert-danger {
+    background-color: #980202;
+}
+
+.alert-warning {
+    background-color: var(--secondary);
+}
+
+.alert-success {
+    background-color: #228802;
+}
+
+.map {
+    min-height: 500px;
+    border-radius: 0 0 var(--border-radius-med) 0;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+@media screen and (max-width: 575.98px) {
+    .map {
+        min-height: 350px;
+    }
+}

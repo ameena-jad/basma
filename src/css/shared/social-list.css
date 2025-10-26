@@ -1,0 +1,31 @@
+.footer-social {
+    margin-top: 20px;
+}
+
+.social-menu {
+    display: flex;
+    gap: 10px;
+}
+
+.social-menu li .item {
+    display: flex;
+    font-size: 16px;
+    color: var(--secondary-color);
+    transition: color 0.3s ease-in-out;
+    border: 1px solid rgb(255 244 241 / 30%);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.footer-social.social-menu li .item {
+    color: var(--white-color);
+}
+
+@media (min-width: 992px) {
+    .social-menu li .item:hover {
+        color: var(--primary-color);
+    }
+}

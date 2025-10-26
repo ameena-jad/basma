@@ -1,0 +1,25 @@
+@import './shared/vars.css';
+@import './shared/grids.css';
+@import './shared/base.css';
+@import './shared/main-classes.css';
+@import './shared/buttons.css';
+@import './shared/header.css';
+@import './shared/footer.css';
+@import './shared/swiper.css';
+
+/* @import './shared/swiper.css'; */
+
+@import './items/section.css';
+@import './items/benefits.css';
+@import './items/indusstries.css';
+@import './items/trusted.css';
+@import './items/products.css';
+@import './items/hero.css';
+@import './items/features.css';
+@import './items/stories.css';
+@import './items/chats.css';
+@import './items/main_slider.css';
+@import './items/form.css';
+
+@import '../Fonts/CoHeadline/stylesheet.css';
+@import '../fonts/icomoon/style.css';
