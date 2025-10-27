@@ -242,7 +242,7 @@
 }
 
 .lang-w{
-    color: var(--dark-color);
+    color: var(--gray-color);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;

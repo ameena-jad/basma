@@ -190,5 +190,22 @@ $(document).on('ready', function () {
         $(".news-selected-details-image img").attr("src", bg);
     });
 
+    new Swiper('.news-swiper', {
+        slidesPerView: '1',
+        loop: true,
+        navigation: {
+            nextEl: ".news-button-next",
+            prevEl: ".news-button-prev",
+        },
+    });
+
+    $(".news-swiper .close-w").on("click", function () {
+        $(".news-swiper").addClass("d-none");
+        console.log("close");
+    });
+    
+    
+    
+
 
 });
