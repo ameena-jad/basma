@@ -7,6 +7,9 @@
 @import './shared/footer.css';
 @import './shared/swiper.css';
 
+@import './inner/inner-page.css';
+@import './inner/contact.css';
+
 /* @import './shared/swiper.css'; */
 
 @import './items/section.css';

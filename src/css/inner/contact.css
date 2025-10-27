@@ -1,0 +1,31 @@
+.contact-form .form-control {
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contact-form .btn{
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.map-w {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 6px solid white;
+}
+
+.contact-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-list li {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-color);
+}

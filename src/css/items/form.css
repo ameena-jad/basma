@@ -1,14 +1,3 @@
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background: var(--light-gray-color);
-    padding: 30px;
-    border-radius: 0 0 var(--border-radius-med) 0;
-    flex: 1;
-    height: 100%;
-}
-
 .form-control {
     width: 100%;
     background-color: white;
@@ -22,6 +11,10 @@
 
 .form-control:not(textarea) {
     height: 45px;
+}
+
+textarea.form-control {
+    height: 250px;
 }
 
 .form-btn {
