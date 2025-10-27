@@ -112,6 +112,20 @@ $(document).on('ready', function () {
         //     }
         // });
 
+        new Swiper('.programs-swiper', {
+            slidesPerView: '1',
+            loop: true,
+            spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 2,
+                }
+            },
+        });
+
     const containerWidth = $(".container").first().width() || 1400;
     const containerFluidOffset = () => {
         const windowWidth = $(window).width();
