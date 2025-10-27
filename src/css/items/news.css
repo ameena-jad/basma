@@ -1,0 +1,112 @@
+.news-category-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.news-category-list .item {
+    padding: 5px 60px;
+    border-radius: var(--border-radius-med);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.news-category-list .item.active {
+    background: linear-gradient(90deg, #8a80f3 21%, #aa7ce9 87%);
+    color: white;
+    border-color: #773cbe00;
+}
+
+.news-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    min-height: 320px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    flex: 1;
+}
+
+.news-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    background: rgba(var(--secondary-color-rgb), 0.8);
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.news-item-title {
+    font-size: 14px;
+    color: white;
+    font-weight: 300;
+    margin: 0;
+}
+
+.news-item-content i {
+    font-size: 16px;
+    color: white;
+}
+
+.news-selected-details {
+    display: flex;
+    gap: 30px;
+    border-radius: 30px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.news-selected-details-content{
+    padding: 50px 0 30px 20px;
+}
+.news-selected-details-image{
+    flex: none;
+    width: 35%;
+}
+.news-selected-details-image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.news-selected-details-title{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-color);
+    margin: 0;
+}
+.news-selected-details-desc{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 25px 0;
+}
+.news-selected-details-btn{
+    color: var(--primary-color);
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.news-selected-details-btn:hover{
+    text-decoration: underline;
+}
+.news-selected-details-date{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-color);
+    margin: 10px 0 0;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+}

@@ -14,16 +14,14 @@
     content: '';
     position: absolute;
     inset: 0;
-    /* background: linear-gradient(270deg, #753bbd00 42%, #753bbde3 68%); */
-    background: var(--primary-color);
+    background: linear-gradient(90deg, #753bbd00 42%, #753bbde3 68%);
     z-index: -1;
 }
 
 .main-slider--content {
     margin-top: 40px;
     display: flex;
-    /* justify-content: center; */
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;

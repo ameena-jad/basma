@@ -1,3 +1,4 @@
+
 document.addEventListener("lazybeforeunveil", function (e) {
     var bg = e.target.getAttribute("data-bg");
     if (bg) {
@@ -136,24 +137,58 @@ $(document).on('ready', function () {
         containerFluidOffset();
     });
 
-    // footer mobile menu
-    if ($(window).width() < 576) {
-        $(".footer-item.footer-item-mobile .footer-item-title").on(
-            "click",
-            function (e) {
-                e.preventDefault();
-                const btn = $(this);
-                const wrapper = btn.closest(".footer-item-mobile");
-                const content = wrapper.find(".footer-item-content");
-                if (!wrapper.hasClass("active")) {
-                    wrapper.addClass("active");
-                    content.stop().slideDown();
-                } else {
-                    wrapper.removeClass("active");
-                    content.stop().slideUp();
-                }
+    function handleHash(item) {
+        const _item = $(item);
+        if (_item.length) {
+            if (_item.hasClass("tab-hash")) {
+                blockTabs(_item);
+            } else {
+                _item[0].scrollIntoView({ behavior: "smooth", block: "start" });
             }
-        );
+        }
     }
+
+    function blockTabs(tab) {
+        const _tab = $(tab);
+        $(".tab, .tab-content, [href^='#']").removeClass("active");
+        const _tab_parent = _tab.closest(".tabs-w");
+        _tab_parent.find(".tab.active").removeClass("active");
+        _tab_parent
+            .find(".tab-content.active")
+            .removeClass("active")
+            .stop()
+            .slideUp();
+        const hash = "#" + _tab.attr("id");
+        const active_tab = $('[href="' + hash + '"]');
+        active_tab.addClass("active");
+        _tab.addClass("active");
+    }
+
+    window.addEventListener("hashchange", function (event) {
+        if (window.location.hash) {
+            handleHash($(window.location.hash));
+        }
+    });
+
+    window.addEventListener("load", function (event) {
+        if (window.location.hash) {
+            handleHash($(window.location.hash));
+        }
+    });
+
+    $(".news-item").on("click", function (e) {
+        const bg = e.target.getAttribute("data-bg");
+        const title = e.target.getAttribute("data-title");
+        const desc = e.target.getAttribute("data-desc");
+        const date = e.target.getAttribute("data-date");
+
+        $(".news-selected-details-title").text(title);
+        $(".news-selected-details-desc").text(desc);
+        $(".news-selected-details-date").text(date);
+        $(".news-selected-details-btn").text("اقرأ المزيد");
+        $(".news-selected-details-btn").attr("href", "#");
+        $(".news-selected-details-image img").attr("src", bg);
+    });
+
 
 });

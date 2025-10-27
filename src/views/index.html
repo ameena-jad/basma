@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 5</title>
+    <title>Basma Radio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -70,11 +70,17 @@
                 <i class="icon-search"></i>
               </div>
             </li>
+            <li>
+              <a href="#" class="lang-w">
+                <i class="icon-earth"></i>
+                <span>En</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
-    <div class="upBtn" id="upBtn"><i class="icon-triangle-1"></i></div>
+    <div class="upBtn" id="upBtn"><i class="icon-triangle"></i></div>
     <main>
       <section class="main-slider-swiper-w loading">
         <div class="swiper main-slider-swiper" id="swiper-main-slider">
@@ -85,7 +91,7 @@
                 data-bg="../images/c868bfa7-8c09-44ba-a32d-c48bcd778f3b.webp"
               >
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-4">
                     <h2 class="main-slider--title">بسمة..صوت بلادي</h2>
                     <div class="main-slider--content">
                       <div class="content-item">
@@ -151,7 +157,10 @@
             </div>
 
             <div class="swiper-slide">
-              <div class="main-slider lazyload" data-bg="../images/5a570395-2471-4ec8-8cba-2e8c7d0596f2.webp">
+              <div
+                class="main-slider lazyload"
+                data-bg="../images/5a570395-2471-4ec8-8cba-2e8c7d0596f2.webp"
+              >
                 <div class="row">
                   <div class="col-md-6">
                     <h2 class="main-slider--title">بسمة..صوت بلادي</h2>
@@ -165,23 +174,100 @@
         </div>
       </section>
 
-      <section class="news-section center">
+      <section class="section-m">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 class="news-section--title">الأخبار</h2>
-            </div>
+          <div class="section-head">
+            <h2 class="section--title">برامج بسمة</h2>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="news-item">
-                <div class="news-item-img">
-                  <img src="../images/news-item-1.jpg" alt="news-item-1">
+        </div>
+      </section>
+      <section class="section-m">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section--title">الأخبار</h2>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="container">
+            <div class="news-selected-details">
+              <div class="news-selected-details-image">
+                <img
+                  src="../images/news/02d898b6-700a-4ee9-a258-20b1e1a15b5a.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="news-selected-details-content">
+                <h3 class="news-selected-details-title">
+                  عباس يصدر إعلانا دستوريا يقضي بتولي نائبه مهام الرئيس في حال
+                  شغور المنصب
+                </h3>
+                <div class="news-selected-details-desc">
+                  راديو بسمة - أصدر رئيس دولة فلسطين محمود عباس، إعلاناً
+                  دستورياً، يقضي بموجبه، بأنه إذا شغر مركز رئيس السلطة الوطنية
+                  الفلسطينية، في حالة عدم وجود المجلس التشريعي، يتولى نائب رئيس
+                  اللجنة التنفيذية لمنظمة التحرير الفلسطينية، نائب رئيس دولة
+                  فلسطين، مهام رئاسة السلطة الوطني...
                 </div>
-                <div class="news-item-content">
-                  <h3 class="news-item-title">الأخبار</h3>
+                <div class="news-selected-details-btn">اقرأ المزيد</div>
+                <div class="news-selected-details-date">26 Oct 2025</div>
+              </div>
+            </div>
+            <div class="tabs-w">
+              <ul class="tabs-list news-category-list list-plain">
+                <li><a href="#local" class="item active">محلي</a></li>
+                <li><a href="#international" class="item">دولي</a></li>
+                <li><a href="#sports" class="item">رياضة</a></li>
+                <li><a href="#entertainment" class="item">منوعات</a></li>
+                <li><a href="#culture" class="item">ثقافة وفنون</a></li>
+              </ul>
+            </div>
+            <div class="tabs-content">
+              <div id="local" class="tab-content tab-hash active">
+                <div class="row">
+                  <div class="col-md-3 d-flex">
+                    <div
+                      class="news-item lazyload"
+                      data-bg="../images/news/02d898b6-700a-4ee9-a258-20b1e1a15b5a.jpg"
+                      data-title="عباس يصدر إعلانا دستوريا يقضي بتولي نائبه مهام الرئيس في حال شغور المنصب"
+                      data-desc=" راديو بسمة - أصدر رئيس دولة فلسطين محمود عباس، إعلاناً دستورياً، يقضي بموجبه، بأنه إذا شغر مركز رئيس السلطة الوطنية الفلسطينية، في حالة عدم وجود المجلس التشريعي، يتولى نائب رئيس اللجنة التنفيذية لمنظمة التحرير الفلسطينية، نائب رئيس دولة فلسطين، مهام رئاسة السلطة الوطني..."
+                      data-date="26 Oct 2025"
+                    >
+                      <div class="news-item-content">
+                        <h3 class="news-item-title">
+                          عباس يصدر إعلانا دستوريا يقضي بتولي نائبه مهام الرئيس
+                          في حال شغور المنصب
+                        </h3>
+                        <i class="icon-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 d-flex">
+                    <div
+                      class="news-item lazyload"
+                      data-bg="../images/news/66a2bda9-56f6-4fc2-9cfa-4c128a2487e9.webp"
+                      data-title="الاحتلال يجرف أراضي المواطنين شرق الخليل"
+                      data-desc=" راديو بسمة - شرعت قوات الاحتلال ، اليوم الأحد، بتجريف مساحات كبيرة من أراضي المواطنين في محيط جبل جويحان شرق الخليل. وذكرت مصادر، أن عددا من آليات الاحتلال شرعت بتجريف أراضي المواطنين في جبل جويحان بمنطقة البويرة شرق الخليل، تمهيدا للاستيلاء عليها لصالح توسعه الاستيطا..."
+                      data-date="26 Oct 2025"
+                    >
+                      <div class="news-item-content">
+                        <h3 class="news-item-title">
+                          عباس يصدر إعلانا دستوريا يقضي بتولي نائبه مهام الرئيس
+                          في حال شغور المنصب
+                        </h3>
+                        <i class="icon-arrow-left"></i>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div id="international" class="tab-content tab-hash">
+                international
+              </div>
+              <div id="sports" class="tab-content tab-hash">sports</div>
+              <div id="entertainment" class="tab-content tab-hash">
+                entertainment
+              </div>
+              <div id="culture" class="tab-content tab-hash">culture</div>
             </div>
           </div>
         </div>
@@ -251,7 +337,7 @@
           </div>
         </div>
       </div>
-      <div class="sticky-box-w">
+      <!-- <div class="sticky-box-w">
         <div class="container">
           <div class="sticky-box">
             <div class="logo-box">
@@ -259,7 +345,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </footer>
 
     <!-- <script src="../js/jquery.js"></script> -->
@@ -274,7 +360,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../js/index.js" type="module"></script>
   </body>
 </html>

@@ -143,19 +143,22 @@
     display: block;
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    left: 10px;
     z-index: 1030;
-    font-size: 12px;
+    font-size: 20px;
     border: none;
-    background-color: white;
-    color: var(--primary-color);
-    padding: 5px 15px;
+    background-color: var(--primary-color);
+    color: white;
+    width: 50px;
+    height: 50px;
     visibility: hidden;
     opacity: 0;
-    box-shadow: var(--box-shadow);
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .upBtn.show {
@@ -235,7 +238,28 @@
 .toolbar-menu-list {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+}
+
+.lang-w{
+    color: var(--dark-color);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+}
+
+.lang-w i{
+    font-size: 20px;
+}
+
+.lang-w span{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.lang-w:hover{
+    color: var(--primary-color);
 }
 
 @media (min-width: 992px) {

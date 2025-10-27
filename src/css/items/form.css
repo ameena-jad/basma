@@ -42,10 +42,10 @@
 .search-input-w {
     position: relative;
     width: 100%;
-    max-width: 200px;
+    max-width: 165px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    padding: 5px 15px;
+    padding: 3.5px 15px;
 }
 
 .search-input-w input {
@@ -63,4 +63,6 @@
     top: 50%;
     transform: translateY(-50%);
     color: var(--text-color);
+    margin-left: 5px;
+    font-size: 15px;
 }

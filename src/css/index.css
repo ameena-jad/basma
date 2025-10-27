@@ -20,6 +20,8 @@
 @import './items/chats.css';
 @import './items/main_slider.css';
 @import './items/form.css';
+@import './items/news.css';
+@import './items/tabs.css';
 
 @import '../Fonts/CoHeadline/stylesheet.css';
 @import '../fonts/icomoon/style.css';
