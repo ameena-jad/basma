@@ -38,15 +38,23 @@
 }
 
 .footer .social-list-item i {
-    font-size: 20px;
+    font-size: 19px;
     color: white;
     transition: color 0.3s ease-in-out;
 }
 
+.footer .social-list-item:hover i {
+    color: var(--primary-color);
+}
+
 .footer-links {
     display: flex;
-    /* justify-content: flex-end; */
-    gap: 20px;
+    gap: 10px;
+}
+
+.footer-links a:not(:last-child) {
+    border-left: 1px solid white;
+    padding-left: 10px;
 }
 
 .footer-links a {
