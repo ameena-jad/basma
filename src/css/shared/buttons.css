@@ -70,32 +70,17 @@
     color: white;
 }
 
-/* .btn-primary:hover,
-.btn-default:hover {
+.btn-outline-white {
     background: transparent;
+    border-color: white;
+    color: white;
 }
 
-.btn-secondary:hover {
-    color: var(--white-color);
-}
-
-.btn-full {
-    width: 100%;
-}
-
-.btn-no-bg {
+.btn-outline-white:hover {
+    background: white;
     color: var(--primary-color);
-    font-size: 16px;
-    padding: 14px 50px 14px 0;
+    border-color: white;
 }
-
-.btn-no-bg::before {
-    width: 32px;
-    height: 32px;
-    font-size: 10px;
-    color: var(--white-color);
-    background-color: var(--primary-color);
-} */
 
 @media screen and (max-width: 1199.98px) {
     .btn:not(.btn-no-bg) {

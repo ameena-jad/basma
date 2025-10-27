@@ -113,7 +113,7 @@
     border-radius: 30px;
     border: 1px solid var(--border-color);
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .news-selected-details-content{
     padding: 50px 0 30px 20px;

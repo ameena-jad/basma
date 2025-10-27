@@ -50,6 +50,10 @@
     margin-top: 20px;
 }
 
+.mt-30 {
+    margin-top: 30px;
+}
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -96,6 +100,10 @@
     background-color: rgba(255, 255, 255, .2);
     transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 1;
+}
+
+.bg-gradient {
+    background: linear-gradient(90deg, #753bbd00 0%, #753bbde3 100%);
 }
 
 @media (min-width: 992px) {

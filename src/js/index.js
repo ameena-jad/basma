@@ -98,11 +98,11 @@ $(document).on('ready', function () {
                     slidesPerView: '1',
                     loop: true,
                     effect: "fade",
-                    autoplay: {
-                        enabled: true,
-                        delay: 5000,
-                        pauseOnMouseEnter: true
-                    },
+                    // autoplay: {
+                    //     enabled: true,
+                    //     delay: 5000,
+                    //     pauseOnMouseEnter: true
+                    // },
                     pagination: {
                         el: ".main-slider-swiper-pagination",
                         clickable: true,
@@ -177,6 +177,7 @@ $(document).on('ready', function () {
     });
 
     $(".news-item").on("click", function (e) {
+        $(".news-swiper").removeClass("d-none");
         const bg = e.target.getAttribute("data-bg");
         const title = e.target.getAttribute("data-title");
         const desc = e.target.getAttribute("data-desc");
@@ -201,11 +202,5 @@ $(document).on('ready', function () {
 
     $(".news-swiper .close-w").on("click", function () {
         $(".news-swiper").addClass("d-none");
-        console.log("close");
     });
-    
-    
-    
-
-
 });
