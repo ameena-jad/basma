@@ -87,12 +87,9 @@ $(document).on('ready', function () {
 
     mobileMenu();
 
-    let initMainSlider = false;
-        $(window).on('mousemove click touchstart touchmove', function (e) {
-            if (!initMainSlider) {
-                $('#swiper-main-slider').fadeIn(function () {
-                    $('#static-main-slider').remove();
-                });
+    // let initMainSlider = false;
+    //     $(window).on('mousemove click touchstart touchmove', function (e) {
+    //         if (!initMainSlider) {
                 new Swiper('.main-slider-swiper', {
                     // modules: [pagination, EffectFade, Autoplay],
                     slidesPerView: '1',
@@ -111,9 +108,9 @@ $(document).on('ready', function () {
                         $(swiper.el).closest('.loading').removeClass('loading');
                     }
                 });
-                initMainSlider = true;
-            }
-        });
+        //         initMainSlider = true;
+        //     }
+        // });
 
     const containerWidth = $(".container").first().width() || 1400;
     const containerFluidOffset = () => {
