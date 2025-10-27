@@ -83,20 +83,13 @@
 }
 
 @media screen and (max-width: 1199.98px) {
-    .btn:not(.btn-no-bg) {
-        padding: 12px 50px 12px 15px;
-    }
+    
 }
 
 @media screen and (max-width: 991.98px) {
-    .btn-no-bg::before {
-        width: 30px;
-        height: 30px;
-    }
+    
 }
 
 @media screen and (max-width: 575.98px) {
-    .btn {
-        font-size: 14px;
-    }
+    
 }

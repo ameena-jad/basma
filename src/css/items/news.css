@@ -157,3 +157,14 @@
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
 }
+
+@media (max-width: 991.98px) {
+    .news-category-list {
+        gap: 10px;
+    }
+    
+    .news-category-list .item {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+}
