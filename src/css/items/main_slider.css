@@ -2,13 +2,14 @@
     min-height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
-    padding-top: 200px;
-    padding-right: 100px;
-    padding-bottom: 200px;
+    padding-top: 160px;
+    padding-bottom: 120px;
     position: relative;
     z-index: 1;
 }
+
 .main-slider-swiper-w .loading,
 .main-slider-swiper-w {
     height: 90vh;
@@ -21,7 +22,7 @@
     height: 100%;
 }
 
-.main-slider-swiper-pagination{
+.main-slider-swiper-pagination {
     right: 40%;
 }
 
@@ -34,8 +35,17 @@
     z-index: -1;
 }
 
+.slider-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 60px;
+}
+
 .main-slider--content {
-    margin-top: 40px;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +56,6 @@
 }
 
 .main-slider--buttons {
-    margin-top: 40px;
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -55,6 +64,7 @@
 .main-slider--btn {
     padding: 8px 20px;
     font-size: 20px;
+    text-align: center;
 }
 
 .content-item {
@@ -95,32 +105,80 @@
     margin: 20px 0 0;
 }
 
-.main-slider--btn {
-    margin-top: 40px;
-    text-align: center;
-}
-
 
 @media screen and (max-width: 1199.98px) {
-    .main-slider--title{
-        font-size: 70px;
+    .main-slider--title {
+        font-size: 58px;
     }
 }
 
 @media screen and (max-width: 991.98px) {
-    .main-slider--title{
-        font-size: 60px;
+    .main-slider {
+        background-position: 75%;
+    }
+
+    .main-slider--title {
+        font-size: 50px;
+    }
+
+    .content-item .title {
+        font-size: 15px;
+    }
+
+    .content-item .number {
+        font-size: 15px;
+        padding: 3px 8px;
     }
 }
 
 @media screen and (max-width: 767.98px) {
-    .main-slider--title{
-        font-size: 50px;
+    .main-slider.with-shadow::after {
+        background: linear-gradient(90deg, #753bbd00 0%, #753bbde3 100%);
+    }
+
+    .main-slider--title {
+        font-size: 45px;
+    }
+
+    .main-slider--buttons {
+        gap: 10px;
+    }
+
+    .main-slider--btn {
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+
+    .main-slider--content {
+        padding: 0 20px;
+        gap: 10px;
+    }
+
+    .content-item {
+        gap: 5px;
     }
 }
 
 @media screen and (max-width: 575.98px) {
-    .main-slider--title{
+    .main-slider--title {
         font-size: 35px;
+    }
+
+    .main-slider--buttons {
+        flex-wrap: wrap;
+    }
+
+    .main-slider--btn {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+
+    .content-item .title {
+        font-size: 13px;
+    }
+
+    .content-item .number {
+        font-size: 13px;
     }
 }

@@ -117,11 +117,14 @@ $(document).on('ready', function () {
             loop: true,
             spaceBetween: 20,
             breakpoints: {
-                768: {
+                576: {
                     slidesPerView: 1,
                 },
-                992: {
+                768: {
                     slidesPerView: 2,
+                },
+                992: {
+                    slidesPerView: 3,
                 }
             },
         });

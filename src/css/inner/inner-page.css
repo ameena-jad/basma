@@ -15,7 +15,7 @@
 
 .inner-header {
     background-color: var(--primary-color);
-    padding: 20px 0;
+    padding: 10px 0 20px;
 }
 
 .inner-header-title {
@@ -60,6 +60,7 @@
     color: white;
     margin: 0;
     text-transform: capitalize;
+    position: relative;
 }
 
 /* .error-wrap {
@@ -165,10 +166,10 @@
 
 .inner-body-desc p,
 .inner-body-desc {
-    font-family: sans-serif !important;
+    font-family: var(--font) !important;
     /*text-align: justify;*/
     color: white;
-    font-size: 18.6px;
+    font-size: 18px;
     line-height: 30px !important;
     word-break: break-word;
     font-weight: 400;
@@ -460,6 +461,14 @@
         --text-multiplier: 0.95;
     }
 
+    .inner-header-title {
+        font-size: 40px;
+    }
+    
+    .inner-header-title.large-title {
+        font-size: 45px;
+    }
+
     .inner-auth-image {
         display: none;
     }
@@ -481,6 +490,14 @@
 @media screen and (max-width: 767.98px) {
     :root {
         --text-multiplier: 0.9;
+    }
+
+    .inner-header-title {
+        font-size: 30px;
+    }
+    
+    .inner-header-title.large-title {
+        font-size: 40px;
     }
 
     .inner-body-container {
@@ -506,10 +523,6 @@
 }
 
 @media screen and (max-width: 575.98px) {
-    .inner-header {
-        padding: 10px 0 0;
-    }
-
     .error-title {
         font-size: 100px;
         line-height: 100px;

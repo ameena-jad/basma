@@ -46,6 +46,10 @@
     margin-top: 40px;
 }
 
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -111,6 +115,10 @@
         height: 250%;
         transition: all 600ms linear !important;
         background-color: transparent;
+    }
+
+    .show-mobile {
+        display: none;
     }
 }
 

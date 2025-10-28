@@ -4,6 +4,7 @@
     flex: 1;
     min-height: 320px;
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -61,6 +62,10 @@
 
 .program-item-content {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.program-inner-page .program-item{
+    min-height: 165px;
 }
 
 .program-inner-page .program-item-title{
