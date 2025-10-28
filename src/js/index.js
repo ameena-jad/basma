@@ -198,7 +198,7 @@ $(document).on('ready', function () {
         $(".news-selected-details-desc").text(desc);
         $(".news-selected-details-date").text(date);
         $(".news-selected-details-btn").text("اقرأ المزيد");
-        $(".news-selected-details-btn").attr("href", "#");
+        $(".news-selected-details-btn").attr("href", "./inner-news.html");
         $(".news-selected-details-image img").attr("src", bg);
     });
 
