@@ -116,6 +116,7 @@ $(document).on('ready', function () {
             slidesPerView: '1',
             loop: true,
             spaceBetween: 20,
+            centeredSlides: true,
             breakpoints: {
                 576: {
                     slidesPerView: 1,
@@ -128,6 +129,27 @@ $(document).on('ready', function () {
                 }
             },
         });
+
+        if ($(window).width() < 992) {
+            $(".news-section .tabs-content .tab-content").addClass("swiper list-news-swiper");
+            $(".news-section .tabs-content .tab-content .row").addClass("swiper-wrapper").removeClass("row");
+            $(".news-section .tabs-content .tab-content .col-md-3").addClass("swiper-slide").removeClass("col-md-3");
+
+            new Swiper('.list-news-swiper', {
+                slidesPerView: '2',
+                spaceBetween: 20,
+                loop: true,
+                centeredSlides: true,
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                    },
+                },
+            });
+        }
 
     const containerWidth = $(".container").first().width() || 1400;
     const containerFluidOffset = () => {
